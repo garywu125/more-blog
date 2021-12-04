@@ -11,6 +11,14 @@ import path from 'node:path';
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
   // Enable the Preact renderer to support Preact JSX components.
+  // buildOptions: {
+  //   site: 'https://astro-blog-template.netlify.app',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  //   sitemap: true,         // Generate sitemap (set to "false" to disable)
+  // },
+  devOptions: {
+    // hostname: 'localhost',  // The hostname to run the dev server on.
+    port: 3030,             // The port to run the dev server on.
+  },
   renderers: ['@astrojs/renderer-preact'], 
   vite: {
     resolve: {
