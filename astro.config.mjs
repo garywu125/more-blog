@@ -22,11 +22,11 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
   renderers: ['@astrojs/renderer-preact'], 
   vite: {
     resolve: {
-      alias: {
-        $src: path.resolve('./src'),
-        $components: path.resolve('./src/components'),
-        $layouts: path.resolve('./src/layouts'),
-      },
+      // alias: {
+      //   $src: path.resolve('./src'),
+      //   $components: path.resolve('./src/components'),
+      //   $layouts: path.resolve('./src/layouts'),
+      // },
     },  
   },
 });
