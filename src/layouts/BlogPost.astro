@@ -1,7 +1,7 @@
 ---
-import BaseHead from '@components/BaseHead.astro';
-import BlogHeader from '@components/BlogHeader.astro';
-import BlogPost from '@components/BlogPost.astro';
+import BaseHead from 'component:BaseHead.astro';
+import BlogHeader from 'component:BlogHeader.astro';
+import BlogPost from 'component:BlogPost.astro';
 
 const {content} = Astro.props;
 const {title, description, publishDate, author, heroImage, permalink, alt} = content;

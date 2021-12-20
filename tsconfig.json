@@ -1,10 +1,22 @@
+// {
+//   "moduleResolution": "node",  
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@components/*": ["src/components/*"],
+//       "@layouts/*": ["src/layouts/*"]
+//     }
+//   }
+// }
 {
-  "moduleResolution": "node",  
+  "moduleResolution": "node",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"]
+      // "@components:*.astro": ["src/components/*.astro"],      
+      "component:*": ["src/components/*"],            
+      "layout:*": ["src/layouts/*"],
+      "utils:*": ["src/utils/*"],      
     }
   }
 }
